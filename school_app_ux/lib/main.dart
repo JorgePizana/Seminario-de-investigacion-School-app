@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'School_app_ux',
+      debugShowCheckedModeBanner: false,
       initialRoute: route.startRoute,
       theme: ThemeBuilder.lightTheme,
       onGenerateRoute: route.Router.generateRoute,
