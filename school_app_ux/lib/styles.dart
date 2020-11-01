@@ -30,6 +30,12 @@ class ThemeBuilder {
         color: Colors.grey,
         fontSize: 12,
       ),
+      headline3: TextStyle(
+        //initial  screen text TextStyle
+        fontFamily: 'Montserrat',
+        color: Colors.black,
+        fontSize: 20,
+      ),
     ),
     cardTheme: CardTheme(
       //Card theme
@@ -44,6 +50,6 @@ class ThemeBuilder {
       labelColor: Color.fromARGB(255, 26, 62, 147),
       unselectedLabelColor: Colors.grey[400],
     ),
-    buttonColor: Color.fromARGB(255, 26, 62, 147), //get into app button (arrow)
+    buttonColor: Colors.amberAccent[700], //start course button
   );
 }
