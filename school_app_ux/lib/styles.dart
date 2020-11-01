@@ -50,6 +50,6 @@ class ThemeBuilder {
       labelColor: Color.fromARGB(255, 26, 62, 147),
       unselectedLabelColor: Colors.grey[400],
     ),
-    buttonColor: Colors.amberAccent[700], //start course button
+    buttonColor: Colors.deepPurple, //start course button
   );
 }
