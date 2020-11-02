@@ -19,19 +19,25 @@ class ThemeBuilder {
         fontFamily: 'Montserrat',
       ),
       headline5: TextStyle(
-          //start button title
+          //start course button title
           color: Colors.white,
           fontWeight: FontWeight.bold,
           fontFamily: 'Montserrat',
           fontSize: 20),
       headline4: TextStyle(
+        //back to initial page title
+          color: Colors.deepPurple,
+          fontWeight: FontWeight.bold,
+          fontFamily: 'Montserrat',
+          fontSize: 20),
+      headline3: TextStyle(
         //course key TextStyle
         fontFamily: 'Montserrat',
         color: Colors.grey,
-        fontSize: 12,
+        fontSize: 15,
       ),
-      headline3: TextStyle(
-        //initial  screen text TextStyle
+      headline2: TextStyle(
+        //initial screen text TextStyle
         fontFamily: 'Montserrat',
         color: Colors.black,
         fontSize: 20,
