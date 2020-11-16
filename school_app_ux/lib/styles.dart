@@ -7,7 +7,7 @@ class ThemeBuilder {
     scaffoldBackgroundColor: Colors.white,
     backgroundColor: Colors.white,
     appBarTheme: AppBarTheme(
-      color: Colors.white, //App bar color
+      color: Color.fromARGB(255, 201, 73, 85), //App bar color
       iconTheme: IconThemeData(
         color: Colors.black,
       ),
@@ -15,7 +15,7 @@ class ThemeBuilder {
     textTheme: TextTheme(
       headline6: TextStyle(
         //Appbar titles
-        color: Colors.black87,
+        color: Colors.white,
         fontFamily: 'Montserrat',
       ),
       headline5: TextStyle(
@@ -57,5 +57,6 @@ class ThemeBuilder {
       unselectedLabelColor: Colors.grey[400],
     ),
     buttonColor: Colors.deepPurple, //start course button
+
   );
 }
