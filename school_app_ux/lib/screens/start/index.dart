@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:keyboard_visibility/keyboard_visibility.dart';
 import '../../routes.dart';
 
@@ -193,7 +192,7 @@ class _InitialScreenState extends State<InitialScreen> {
                     GestureDetector(
                       onTap: (){
                         setState(() {
-                          Navigator.popAndPushNamed(context, homeRoute);
+                          Navigator.popAndPushNamed(context, navBarRoute);
                         });
                       },
                       child: PrimaryButton(

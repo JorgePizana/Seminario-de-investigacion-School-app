@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:school_app_ux/screens/search/index.dart';
+import 'package:school_app_ux/screens/home/index.dart';
+import 'package:school_app_ux/screens/courseData/index.dart';
 
 class NavBar extends StatefulWidget {
   @override
@@ -9,6 +12,11 @@ class _NavBarState extends State<NavBar>
     with SingleTickerProviderStateMixin {
   TabController _tabController;
   int _selectedItem = 0;
+  final List pages = [
+    HomeScreen(),
+    SearchScreen(),
+    CourseScreen(),
+  ];
 
   @override
   void initState() {
@@ -18,30 +26,23 @@ class _NavBarState extends State<NavBar>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: CustomBottomNavigationBar(
-        iconList: [
-          Icons.home,
-          Icons.search,
-          Icons.person,
-        ],
-        onChange: (val){
-          setState(() {
-            _selectedItem = val;
-          });
-        },
-        defaultSelectedIndex: 0,
-      ),
-      appBar: AppBar(
-        title: Text(
-          'Nav screen test',
-          style: Theme.of(context).textTheme.headline6,
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        bottomNavigationBar: CustomBottomNavigationBar(
+          iconList: [
+            Icons.home,
+            Icons.search,
+            Icons.person,
+          ],
+          onChange: (int index){
+            setState(() {
+              _selectedItem = index;
+            });
+          },
+          defaultSelectedIndex: 0,
         ),
-      ),
-      body: Center(
-        child: Text(
-          "hellou $_selectedItem",
-        ),
+        body: pages[_selectedItem],
       ),
     );
   }

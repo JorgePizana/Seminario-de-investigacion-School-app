@@ -23,7 +23,7 @@ class Router {
         return MaterialPageRoute(builder: (_) => NavBar());
 
       case homeRoute:
-        return MaterialPageRoute(builder: (_) => NavBar());
+        return MaterialPageRoute(builder: (_) => HomeScreen());
 
       case searchRoute:
         return MaterialPageRoute(builder: (_) => SearchScreen());
